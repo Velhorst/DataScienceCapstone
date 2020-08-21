@@ -863,16 +863,6 @@ hljs.initHighlightingOnLoad();
 
 <p>The word prediction algorithm uses a Stupid BackOff scheme. This scheme is chosen for its computational efficiency. In lay men terms this means that the algorithm searches for highest available ngrams to predict the next word. If no match is found using the provided words, ultimately unigrams are used, providing the most frequent word in the English language: <em>the</em>. </p>
 
-<!-- \[ Prediction\lgroup (n)gram \rgroup = \{ \; if\: count\lgroup(n)gram\rgroup > 0   \] -->
-
-<p>\[ Prediction\lgroup \: n\:words \rgroup =  \left\{
-    \begin{array}{l}
-      most\:frequent \: (n)gram \;\;\;\; if\: count\lgroup(n)gram\rgroup > 0\\
-      Prediction\lgroup (n-1)words \rgroup \;\;\; otherwise
-    \end{array}
-  \right.
-   \]</p>
-
 </div>
 
 </section>
